@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SocialNetworkWindow</class>
+ <widget class="QMainWindow" name="SocialNetworkWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>793</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SocialNetworkWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="loginField">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>130</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loginTitle">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>90</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>jitter login</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>130</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>go</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="currProfileName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>currProfileName</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="currUserFriendsTable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>191</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="currProfilePosts">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>571</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>currProfilePosts</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="uliFriendSuggestions">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="uliBackButton">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>420</y>
+      <width>111</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>2</pointsize>
+      <bold>false</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>              _____    ____
+             .#########.#######..
+          .#######################.
+        .############################.
+       .################################.
+      .#########,##,#####################.
+     .#########-#,'########## ############.
+    .######'#-##' # ##'### #. `####:#######.
+    #####:'# #'###,##' # # +#. `###:':######
+   .####,'###,##  ###  # # #`#. -####`######.
+  .####+.' ,'#  ##' #   # # #`#`.`#####::####
+  ####'    #  '##'  #   #_'# #.## `#######;##
+  #:##'      '       #   # ``..__# `#######:#
+  #:##'  .#######s.   #.  .s######.`#####:##
+  #:##   .&quot;______&quot;&quot;'    '&quot;&quot;_____&quot;&quot;. `.#####:#
+ .#:##   &gt;&lt;'(##)'&gt; )    ( &lt;'(##)`&gt;&lt;   `####;#
+ ##:##  , , -==-' '.    .` `-==- .   ######'
+ #|-'| / /      ,  :    : ,        ` :####:'
+ :#  |: '  '   /  .     .  .  `    `  |`####
+ #|  :|   /   '  '       `     . ,   :  #:# 
+ #L. | | ,  /   `.-._ _.-.'   .     : ) J##
+### `  /  '                     : : |  /##
+ ## #|.:: '       _    _        ` | | |'####
+ #####|  |  (.-'.__`-'__.`-.)   :| ' ######
+ ######:      `-...___..-' '     :: /######
+ #######``.                   ,'|  /#######
+.# ######         ___       / /' /#######
+# #'#####|      -     -    /  ,'|### #. #.
+`#  #####| '-.`             ' ,-'  |### #  #
+    #' `#|    '._         ,.-'     #`#`#.
+         |       .'------' :       |#   #
+         |       :         :       |
+         |       :         :       |
+                 :         :          dp</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="topFriendSuggestionsTitle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Top Friend Suggestions</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="friendsListTitle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Friends List</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="recentPostsTitle">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>40</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Recent Posts</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clickToInstaFriendTitle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>(click name to insta-friend)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addFriendButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>0</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+ Add Friend</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="universalBackButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>universal back button</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>793</width>
+     <height>37</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
